@@ -1,0 +1,5 @@
+#!/bin/bash
+HOOK_PATH=$(cd hooks && cd $(dirname $(readlink post-receive)); pwd)
+source $HOOK_PATH/bin/activate
+
+exec $HOOK_PATH/uri-hook.py
