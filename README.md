@@ -8,8 +8,8 @@ output to see what you get.
 
 Installation
 ------------
-Start with ./setup.sh. You'll need virtualenv installed (apt-get install
-python-virtualenv for debian-based distros). This creates a virtualenv in this
+Start with ./setup.sh. You'll need virtualenv and the dev package for python installed (apt-get install
+python-virtualenv python-dev for debian-based distros). This creates a virtualenv in this
 directory.
 
 Then, symlink your post-receive hook to uri-hook. NOT uri-hook.py.
