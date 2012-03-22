@@ -62,4 +62,7 @@ if __name__ == "__main__":
         })
 
     print json.dumps(payload, indent=4)
-    requests.post(destination, data={'payload': json.dumps(payload)})
+    r = requests.post(destination, data={'payload': json.dumps(payload)})
+    print r.status_code
+    print r.headers
+    print r.text
