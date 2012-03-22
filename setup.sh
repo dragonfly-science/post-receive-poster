@@ -3,3 +3,4 @@
 . bin/activate
 pip install GitPython
 pip install requests
+pip install argparse
